@@ -64,6 +64,56 @@ h1 {
   letter-spacing: -0.05em;
 }
 
+.section-divider {
+  width: min(100%, 220px);
+  height: 2px;
+  margin: 18px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(138, 43, 226, 0),
+    rgba(138, 43, 226, 1),
+    rgba(138, 43, 226, 0)
+  );
+  box-shadow: 0 0 14px rgba(138, 43, 226, 0.5);
+}
+
+.catalog-divider {
+  margin-top: 18px;
+}
+
+.section-label {
+  margin-top: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.other-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.final-divider {
+  margin-top: 18px;
+}
+
+.only-me {
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.only-me-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .profile-description {
   margin: 8px 0 0;
   font-size: clamp(1rem, 2vw, 1.2rem);
@@ -74,7 +124,7 @@ h1 {
    SOCIAL LINKS
 ========================================= */
 .social-wrapper {
-  margin-top: 28px;
+  margin-top: 20px;
 }
 
 .social-links {
