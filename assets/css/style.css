@@ -114,6 +114,12 @@ h1 {
   gap: 14px;
 }
 
+.apk-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
 .profile-description {
   margin: 8px 0 0;
   font-size: clamp(1rem, 2vw, 1.2rem);
@@ -135,7 +141,8 @@ h1 {
 }
 
 .social-button {
-  display: flex;
+  display: grid;
+  grid-template-columns: 24px auto;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -178,16 +185,19 @@ h1 {
 
 .social-button i,
 .social-button .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   text-align: center;
+  line-height: 1;
   color: rgba(200, 170, 255, 0.95);
   flex-shrink: 0;
 }
 
 .social-button .social-icon {
   object-fit: contain;
-  display: block;
 }
 
 .social-button span {
