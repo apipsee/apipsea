@@ -17,7 +17,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #000000;
+  background:
+    radial-gradient(circle at top, rgba(129, 70, 255, 0.32), transparent 38%),
+    linear-gradient(180deg, #07070b 0%, #121218 35%, #050509 100%);
   color: #ffffff;
   font-family: "Inter", Arial, sans-serif;
   line-height: 1.5;
@@ -117,8 +119,20 @@ h1 {
 .apk-links {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  row-gap: 24px;
 }
+
+.apk-links .social-button {
+  background: #8a2be2;
+  border-color: #8a2be2;
+}
+
+.apk-links .social-button:hover,
+.apk-links .social-button:focus-visible {
+  background: #9b4de8;
+  border-color: #9b4de8;
+}
+
 
 .profile-description {
   margin: 8px 0 0;
